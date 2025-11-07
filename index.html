@@ -28,29 +28,55 @@
     }
     
     header {
-      background: #2c3e50;
-      color: white;
-      padding: 40px 50px;
+      background: url('banner.png') center/cover no-repeat;
+      color: #2c3e50;
+      padding: 60px 50px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .header-left,
+    .header-right {
+      flex: 1;
+      font-size: 0.85em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    
+    .header-left {
       text-align: left;
     }
     
+    .header-right {
+      text-align: right;
+    }
+    
+    .header-center {
+      flex: 2;
+      text-align: center;
+    }
+    
     header h1 {
-      font-size: 2.8em;
-      font-weight: 400;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
+      font-size: 2.2em;
+      font-weight: 300;
+      margin: 0;
+      letter-spacing: 8px;
+      text-transform: uppercase;
     }
     
     header p {
-      font-size: 1.1em;
-      opacity: 0.9;
-      margin-bottom: 5px;
+      margin: 0;
     }
     
     header a {
-      color: #3498db;
+      color: #2c3e50;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 400;
     }
     
     header a:hover {
@@ -58,15 +84,19 @@
     }
     
     button {
-      background: #34495e;
+      background: rgba(52, 73, 94, 0.9);
       color: white;
       border: none;
       padding: 12px 30px;
-      margin-top: 20px;
+      margin-top: 30px;
       cursor: pointer;
       font-size: 0.95em;
       letter-spacing: 0.5px;
       transition: background 0.3s ease;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
     
     button:hover {
@@ -207,12 +237,23 @@
         margin: 0 10px;
       }
       
+      header {
+        flex-direction: column;
+        padding: 30px 25px;
+      }
+      
+      .header-left,
+      .header-right {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
       header, .content {
         padding: 30px 25px;
       }
       
       header h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
       }
       
       .skill-list span {
@@ -224,10 +265,15 @@
 <body>
   <main class="container">
     <header>
-      <h1>Alec Makarov</h1>
-      <p>Odessa, Ukraine</p>
-      <p>Telegram: <a href="https://t.me/alec_odessa">@alec_odessa</a></p>
-      <!-- <p><a href="https://www.linkedin.com/in/alec-makarov" target="_blank">LinkedIn Profile</a></p> -->
+      <div class="header-left">
+        <p>ODESSA, UKRAINE</p>
+      </div>
+      <div class="header-center">
+        <h1>ALEC MAKAROV</h1>
+      </div>
+      <div class="header-right">
+        <p>TELEGRAM | <a href="https://t.me/alec_odessa">@ALEC_ODESSA</a></p>
+      </div>
       <button onclick="window.print()">📄 Save as PDF</button>
     </header>
 
@@ -240,7 +286,7 @@
       <section class="experience">
         <h2>Professional Experience</h2>
 
-<article>
+        <article>
           <h3>Freelance</h3>
           <p>2025-now</p>
           <ul>
@@ -279,14 +325,6 @@
             <li>Linux-based terminal support and troubleshooting.</li>
           </ul>
         </article>
-
-        <!-- <article>
-          <h3>Lawyer</h3>
-          <p>Privatbank & Odessa Architecture Inspectorate · 2010–2012</p>
-          <ul>
-            <li>Handled bankruptcy litigation / court representation for the state.</li>
-          </ul>
-        </article> -->
       </section>
 
       <section class="education">
@@ -301,12 +339,12 @@
           <li>
             <strong>Self Education</strong>
             <ul class="book-list">
-              <li>Matt Galloway — <em>Effective Objective-C</em></li>
-              <li>Aaron Hillegass — <em>Objective-C Programming</em></li>
-              <li>Brian Kernighan — <em>The C Programming Language</em></li>
-              <li>Bjarne Stroustrup — <em>The C++ Programming Language</em></li>
-              <li>Mark Summerfield — <em>Programming in Python 3</em></li>
-              <li>Andy Oppel — <em>Databases Demystified (SQL)</em></li>
+              <li>Matt Galloway – <em>Effective Objective-C</em></li>
+              <li>Aaron Hillegass – <em>Objective-C Programming</em></li>
+              <li>Brian Kernighan – <em>The C Programming Language</em></li>
+              <li>Bjarne Stroustrup – <em>The C++ Programming Language</em></li>
+              <li>Mark Summerfield – <em>Programming in Python 3</em></li>
+              <li>Andy Oppel – <em>Databases Demystified (SQL)</em></li>
             </ul>
           </li>
           <li>Server Computer College (1999) – Computer Graphics & Internet Technologies & Databases</li>
