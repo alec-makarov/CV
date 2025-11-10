@@ -331,18 +331,61 @@
       .header-right {
         text-align: center;
         margin-bottom: 10px;
+        font-size: 0.7em;
+      }
+      
+      .header-center h1 {
+        font-size: 1.5em;
+        letter-spacing: 4px;
       }
       
       header, .content {
         padding: 30px 25px;
       }
       
-      header h1 {
-        font-size: 1.8em;
+      .skills-carousel {
+        height: 250px;
+        perspective: 800px;
       }
       
-      .skill-list span {
-        min-width: 200px;
+      .skill-list {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .skill-list li {
+        width: 180px;
+        height: 120px;
+        margin-left: -90px;
+        margin-top: -60px;
+        padding: 15px;
+      }
+      
+      .skill-list li:nth-child(1) { transform: rotateY(0deg) translateZ(200px); }
+      .skill-list li:nth-child(2) { transform: rotateY(60deg) translateZ(200px); }
+      .skill-list li:nth-child(3) { transform: rotateY(120deg) translateZ(200px); }
+      .skill-list li:nth-child(4) { transform: rotateY(180deg) translateZ(200px); }
+      .skill-list li:nth-child(5) { transform: rotateY(240deg) translateZ(200px); }
+      .skill-list li:nth-child(6) { transform: rotateY(300deg) translateZ(200px); }
+      
+      .skill-list li:nth-child(7) { transform: rotateY(0deg) translateZ(200px); }
+      .skill-list li:nth-child(8) { transform: rotateY(60deg) translateZ(200px); }
+      .skill-list li:nth-child(9) { transform: rotateY(120deg) translateZ(200px); }
+      .skill-list li:nth-child(10) { transform: rotateY(180deg) translateZ(200px); }
+      .skill-list li:nth-child(11) { transform: rotateY(240deg) translateZ(200px); }
+      .skill-list li:nth-child(12) { transform: rotateY(300deg) translateZ(200px); }
+      
+      .skill-name {
+        font-size: 0.95em;
+      }
+      
+      .skill-level {
+        font-size: 0.75em;
+      }
+      
+      .education-section {
+        margin: 35px -25px;
+        padding: 30px 25px;
       }
     }
   </style>
@@ -448,7 +491,7 @@
         <ul class="skill-list">
           <li>
             <span class="skill-name">🤖 AI Prompt-Engineering</span>
-            <span class="skill-level level-expert">C / Objective C / C++ / Python</span>
+            <span class="skill-level level-expert">C / Objective C / C++ / Python<br></span>
           </li>
           <li>
             <span class="skill-name">🌐 Web Development</span>
@@ -476,11 +519,11 @@
           </li>
           <li>
             <span class="skill-name">🌐 Web Development</span>
-            <span class="skill-level level-expert">HTML / CSS / JavaScript</span>
+            <span class="skill-level level-expert">HTML / CSS / JavaScript<br></span>
           </li>
           <li>
             <span class="skill-name">📱 CMS & WordPress</span>
-            <span class="skill-level level-expert">Content Management</span>
+            <span class="skill-level level-expert">Content Management<br></span>
           </li>
           <li>
             <span class="skill-name">💼 Business Software</span>
@@ -488,11 +531,11 @@
           </li>
           <li>
             <span class="skill-name">💻 System Administration</span>
-            <span class="skill-level level-advanced">Linux / Windows / VMWare / MacOS</span>
+            <span class="skill-level level-advanced">Linux / Windows / VMWare / MacOS<</span>
           </li>
           <li>
             <span class="skill-name">🎨 Design & Databases</span>
-            <span class="skill-level level-intermediate">Adobe / Corel / SQL</span>
+            <span class="skill-level level-intermediate">Adobe / Corel / SQL<</span>
           </li>
         </ul>
       </div>
